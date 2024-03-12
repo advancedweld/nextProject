@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+// 引入'@ant-design/nextjs-registry 解决样式问题
+import { AntdRegistry } from '@ant-design/nextjs-registry';
 import './globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -17,8 +19,8 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={inter.className}>
-        <div>layout共享ui</div>
-        {children}
+        <div>根布局，layout共享ui</div>
+        <AntdRegistry>{children}</AntdRegistry>
       </body>
     </html>
   );
