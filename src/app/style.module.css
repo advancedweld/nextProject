@@ -1,0 +1,21 @@
+/*
+ * @Author: xiangshangzhi
+ * @Date: 2024-06-28 10:18:09
+ * @FilePath: \nextProject\src\app\style.module.css
+ * @Description: 
+ */
+
+.layoutWrap{
+  border: 1px solid red;
+  padding: 8px;
+  .title{
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 8px;
+    background-color: #fff;
+  }
+}
+.wrap{
+  border: 1px solid red;
+}
+
